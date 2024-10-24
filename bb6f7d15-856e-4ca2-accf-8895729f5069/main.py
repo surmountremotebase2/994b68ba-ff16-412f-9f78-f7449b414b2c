@@ -10,6 +10,9 @@ class TradingStrategy(Strategy):
 
     @property
     def interval(self):
+        return "1day"  # Using daily data for analysis 
+        @property
+    def interval(self):
         return "1day"  # Using daily data for analysis
 
     @property
