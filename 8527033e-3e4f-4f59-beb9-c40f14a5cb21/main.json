@@ -1,1 +1,1 @@
-{"interval": "", "assets": ["NVDA", "AAPL"], "strategy": []}
+{"groups": {}, "interval": "1min", "assets": ["NVDA", "AAPL"], "strategy": [{"type": "IF", "conditions": [{"type": "BINARY", "first": {"name": "CCI", "args": {"ticker": "NVDA", "length": "111"}, "advanced": {}}, "second": {"name": "EMA", "args": {"length": "11", "ticker": "AAPL"}}, "comp": ">", "operator": ""}], "if_action": {"type": "ACTION", "steps": []}, "else_action": {"type": "ACTION", "steps": []}}]}
