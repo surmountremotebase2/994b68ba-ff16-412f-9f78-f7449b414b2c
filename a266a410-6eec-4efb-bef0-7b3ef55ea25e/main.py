@@ -10,14 +10,14 @@ class TradingStrategy(Strategy):
 
     @property
     def interval(self):
-        return "1hour"
+        return "1hour";
 
     def run(self, data_functions):
-        data = data_functions["ohlcv"]
+        data = data_functions["ohlcv"];
 
-        spy_20_ma = SMA("SPY", data, 20)
-        spy_10_ma = SMA("SPY", data, 10)
-        spy_10_rsi = RSI("SPY", data, 10)
+        spy_20_ma = SMA("SPY", data, 20);
+        spy_10_ma = SMA("SPY", data, 10);
+        spy_10_rsi = RSI("SPY", data, 10);
 
         if None in [spy_20_ma, spy_10_ma, spy_10_rsi]:
             return None
