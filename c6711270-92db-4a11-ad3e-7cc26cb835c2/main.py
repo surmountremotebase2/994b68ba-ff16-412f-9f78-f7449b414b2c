@@ -26,4 +26,4 @@ class TradingStrategy(Strategy):
         if spy_10_rsi[-1]<60 and spy_10_ma[-1]>spy_20_ma[-1]:
             spy_stake = 1
 
-        return TargetAllocation({"SPY": spy_stake})
+        return TargetAllocation({"SPY": spy_stake, "AAPL" : spy_stake})
