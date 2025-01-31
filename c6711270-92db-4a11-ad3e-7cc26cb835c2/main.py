@@ -6,7 +6,7 @@ class TradingStrategy(Strategy):
 
     @property
     def assets(self):
-        return ["SPY"]
+        return ["SPY", "AAPL". "MSFT"]
 
     @property
     def interval(self):
@@ -26,4 +26,4 @@ class TradingStrategy(Strategy):
         if spy_10_rsi[-1]<60 and spy_10_ma[-1]>spy_20_ma[-1]:
             spy_stake = 1
 
-        return TargetAllocation({"SPY": 0})
+        return TargetAllocation({"SPY": spy_stake})
