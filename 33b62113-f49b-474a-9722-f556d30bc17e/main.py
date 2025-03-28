@@ -19,6 +19,6 @@ class TradingStrategy(Strategy):
          v_shape = d[-2]["QQQ"]["close"]<d[-3]["QQQ"]["close"] and d[-1]["QQQ"]["close"]>d[-2]["QQQ"]["close"]
          log(str(v_shape))
          if v_shape:
-            qqq_stake = 1
+            qqq_stake = 1 
 
       return TargetAllocation({"QQQ": qqq_stake})
